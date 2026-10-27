@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08090d" />
+  <meta
+    name="description"
+    content="Ryanezer Natan — Musisi & Tutor Musik. Portofolio, keahlian, pencapaian, dan kontak."
+  />
+  <title>Ryanezer Natan | Musisi & Tutor Musik</title>
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308090d'/%3E%3Cpath d='M16 4l2.6 9.4L28 16l-9.4 2.6L16 28l-2.6-9.4L4 16l9.4-2.6z' fill='%23d5ff62'/%3E%3C/svg%3E"
+  />
+  <!--
+    FRAMESET sesuai materi PPT Pertemuan 3
+    - frameset rows  → frame horizontal (header atas)
+    - frameset cols  → frame vertikal (menu kiri + konten kanan)
+    - frame name + src
+    - scrolling, frameborder, noresize
+  -->
+  <style>
+    /* Fallback jika browser tidak mendukung frameset */
+    body {
+      margin: 0;
+      background: #08090d;
+      color: #f5f4f1;
+      font-family: system-ui, sans-serif;
+      padding: 40px 24px;
+      text-align: center;
+    }
+    a { color: #d5ff62; }
+  </style>
+</head>
+
+<frameset rows="56,*" frameborder="0" border="0" framespacing="0">
+  <!-- Frame atas: judul / header -->
+  <frame
+    name="judul"
+    src="header.html"
+    scrolling="no"
+    noresize
+    marginwidth="0"
+    marginheight="0"
+  />
+
+  <!-- Frame bawah: menu kiri + konten kanan -->
+  <frameset cols="220,*" frameborder="0" border="0" framespacing="0">
+    <frame
+      name="menu"
+      src="menu.html"
+      scrolling="auto"
+      noresize
+      marginwidth="0"
+      marginheight="0"
+    />
+    <frame
+      name="content"
+      src="content.html"
+      scrolling="auto"
+      marginwidth="0"
+      marginheight="0"
+    />
+  </frameset>
+
+  <noframes>
+    <body>
+      <h1>Ryanezer Natan — Musisi &amp; Tutor Musik</h1>
+      <p>
+        Browser Anda tidak mendukung frame.
+        <a href="content.html">Buka halaman utama</a>.
+      </p>
+    </body>
+  </noframes>
+</frameset>
+</html>

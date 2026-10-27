@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Ryanezer Natan</title>
+  <!-- base target sesuai materi PPT: link menu membuka di frame content -->
+  <base target="content" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100%;
+      background:
+        radial-gradient(circle at 20% 0%, #211b4d, transparent 45%),
+        #08090d;
+      color: #f5f4f1;
+      font-family: "Space Grotesk", sans-serif;
+      padding: 28px 20px;
+      border-right: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .menu-label {
+      font-family: "DM Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #a6a8b2;
+      margin-bottom: 22px;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    nav a {
+      display: block;
+      padding: 12px 14px;
+      color: #a6a8b2;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      transition: color 0.25s, background 0.25s, border-color 0.25s;
+    }
+    nav a:hover,
+    nav a:focus {
+      color: #d5ff62;
+      background: rgba(213, 255, 98, 0.08);
+      border-color: rgba(213, 255, 98, 0.25);
+    }
+    nav a span {
+      display: block;
+      font-family: "DM Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: #6b6d78;
+      margin-bottom: 2px;
+    }
+    .menu-footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-family: "DM Mono", monospace;
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: #6b6d78;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <p class="menu-label">Navigasi ✦</p>
+  <nav>
+    <a href="content.html#beranda"><span>00</span> Beranda</a>
+    <a href="content.html#tentang"><span>01</span> Tentang</a>
+    <a href="content.html#keahlian"><span>02</span> Keahlian</a>
+    <a href="content.html#pencapaian"><span>03</span> Pencapaian</a>
+    <a href="content.html#jadwal"><span>04</span> Jadwal &amp; Tarif</a>
+    <a href="content.html#kontak"><span>05</span> Kontak / Form</a>
+  </nav>
+  <p class="menu-footer">
+    Frame menu<br />
+    target → content
+  </p>
+</body>
+</html>
